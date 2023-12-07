@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-wdith,initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div class="main-body">
+		<nav id="navbar">
+			<header>Documentation Menu</header>
+			<a href="#What_is_Java?" class="nav-link">
+				What is Java?</a>
+			<a href="#Objects_and_Classes" class="nav-link">
+				Objects and Classes</a>
+			<a href="#Inheritance" class="nav-link">
+				Inheritance</a>
+			<a href="#Polymorphism" class="nav-link">
+				Polymorphism</a>
+			<a href="#Abstraction" class="nav-link">
+				Abstraction</a>
+			<a href="#Encapsulation" class="nav-link">
+				Encapsulation</a>
+		</nav> 
+
+      <main id="main-doc">
+        <section class="main-section" id="What_is_Java?">
+          <header>What is Java?</header>
+            <p>Java is a programming language and computing platform first released by Sun Microsystems in 1995. It has evolved from humble beginnings to power a large share of today’s digital world, by providing the reliable platform upon which many services and applications are built. New, innovative products and digital services designed for the future continue to rely on Java, as well.</p>
+            <p>"Hello world" is basic program where every programming language is began with.. Let's watch it in Java:</p>
+            <code>
+              class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
+</code>
+<p>Java is an Object Oriented Programming Language.
+					<br> The main pillars of Object Oriented
+					Programming are :
+				</p>
+				<ul>
+					<li>Objects and Classes</li>
+					<li>Inheritance</li>
+					<li>Polymorphism</li>
+					<li>Abstraction</li>
+					<li>Encapsulation</li>
+				</ul>
+        </section>
+            <section class="main-section" id="Objects_and_Classes">
+              <header>Objects and Classes</header>
+              <p>
+                CLASS:A Java class is a set of object which shares common characteristics/ behavior and common properties/ attributes. There are certain points about Java Classes as mentioned below:
+
+Class is not a real-world entity. It is just a template or blueprint or prototype from which objects are created.
+Class does not occupy memory.
+Class is a group of variables of different data types and a group of methods.
+A Class in Java can contain:
+<ul>
+<li>Data member</li>
+<li>Method</li>
+<li>Constructor</li>
+<li>Nested Class</li>
+<li>Interface</li></ul></p>
+<p>OBJECTS:
+It is a basic unit of Object-Oriented Programming and represents real-life entities. A typical Java program creates many objects, which as you know, interact by invoking methods. 
+An object consists of : 
+<ol>
+<li>State: It is represented by attributes of an object. It also reflects the properties of an object.</li>
+<li>Behavior: It is represented by the methods of an object. It also reflects the response of an object with other objects.</li>
+<li>Identity: It gives a unique name to an object and enables one object to interact with other objects.</li></ol></p>
+<code>public class Main {
+  int x = 5;
+
+  public static void main(String[] args) {
+    Main myObj = new Main();
+    System.out.println(myObj.x);
+  }
+}</code>
+            </section>
+                <section class="main-section" id="Inheritance">
+                  <header>Inheritance</header>
+                  <p>Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object. It is an important part of OOPs (Object Oriented programming system).</p>
+<p>The idea behind inheritance in Java is that you can create new classes that are built upon existing classes. When you inherit from an existing class, you can reuse methods and fields of the parent class. Moreover, you can add new methods and fields in your current class also.</p>
+<p>Inheritance represents the IS-A relationship which is also known as a parent-child relationship.</p>
+<code>class Subclass-name extends Superclass-name  
+{  
+   //methods and fields  
+}  </code>
+                </section>
+                    <section class="main-section" id="Polymorphism">
+                      <header>Polymorphism</header>
+                      <p>Polymorphism is considered one of the important features of Object-Oriented Programming. Polymorphism allows us to perform a single action in different ways. In other words, polymorphism allows you to define one interface and have multiple implementations. The word “poly” means many and “morphs” means forms, So it means many forms.</p>
+                    </section>
+                        <section class="main-section" id="Abstraction">
+                          <header>Abstraction</header>
+                          <p>In Java, abstraction is achieved by interfaces and abstract classes. We can achieve 100% abstraction using interfaces.
+
+Data Abstraction may also be defined as the process of identifying only the required characteristics of an object ignoring the irrelevant details. The properties and behaviors of an object differentiate it from other objects of similar type and also help in classifying/grouping the objects.</p>
+<code>abstract class Animal {
+  public abstract void animalSound();
+  public void sleep() {
+    System.out.println("Zzz");
+  }
+}</code>
+                        </section>
+                        <section class="main-section" id="Encapsulation">
+                          <header>Encapsulation</header>
+                          <p>Encapsulation is a fundamental concept in object-oriented programming (OOP) that refers to the bundling of data and methods that operate on that data within a single unit, which is called a class in Java. Encapsulation is a way of hiding the implementation details of a class from outside access and only exposing a public interface that can be used to interact with the class.</p>
+                          <code>public class Main {
+  public static void main(String[] args) {
+    Person myObj = new Person();
+    myObj.name = "John";  // error
+    System.out.println(myObj.name); // error 
+  }
+}</code>
+                        </section>
+      </main>
+      </div>
+      </body>
+  </html>
